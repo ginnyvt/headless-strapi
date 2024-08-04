@@ -1,0 +1,39 @@
+{
+  "name": "headless-strapi",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Ginny's headless CMS",
+  "license": "MIT",
+  "author": {
+    "name": "Ginny Tran"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "release": "npx standard-version && git push --follow-tags origin main",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-graphql": "4.25.3",
+    "@strapi/plugin-i18n": "4.25.3",
+    "@strapi/plugin-seo": "1.9.9",
+    "@strapi/plugin-users-permissions": "4.25.3",
+    "@strapi/provider-email-nodemailer": "4.25.3",
+    "@strapi/provider-upload-aws-s3": "4.25.3",
+    "@strapi/strapi": "4.25.3",
+    "mysql": "2.18.1",
+    "qs": "6.12.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.11"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "fdc0f0b4-468f-4c51-8777-2fcdbe9e156a"
+  }
+}
