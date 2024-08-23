@@ -23,7 +23,7 @@ export default ({ env }) => ({
     config: {
       provider: "aws-s3",
       providerOptions: {
-        baseUrl: `https://${env("STORAGE_HOST")}/${env("CF_BUCKET")}`,
+        baseUrl: `https://${env("STORAGE_HOST")}`,
         rootPath: env("STORAGE_ROOT_PATH"),
         s3Options: {
           credentials: {
